@@ -15,12 +15,11 @@ O **Smart-Garden** facilita o cultivo saudável ao fornecer monitoramento de sol
 ## Modelagem dos Dados
 
 
-
 ### **Diagrama de Banco de Dados**
 
 O projeto utiliza a seguinte modelagem de banco de dados:
 
-![Diagrama de Banco de Dados](path/to/Database-Diagram.png)
+![Diagrama de Banco de Dados](./Database-Diagram.png)
 
 **Tabelas:**
 - **`tb_users`**: Armazena informações dos usuários.
@@ -103,9 +102,8 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
 
 ### **IA**
 - **Python** & **FastAPI**
-- **Scikit-Learn**
-- **Pickle** (para modelos)
-
+- **Pycaret**
+  
 ---
 
 ## Configurações Necessárias
