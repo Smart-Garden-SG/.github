@@ -21,7 +21,7 @@
 
 ## 📝 Resumo
 
-O **Smart-Garden** é uma aplicação web e de inteligência artificial que facilita o cultivo saudável de hortas e plantações ao fornecer monitoramento de solo em tempo real e recomendações automáticas de fertilizantes. Ele combina tecnologias de Aplicação WEB e IA para oferecer uma solução completa, intuitiva e eficiente para o gerenciamento de hortas, utilizando sensores de solo e inteligência artificial para análise de dados e geração de recomendações.
+O **Smart-Garden** é uma aplicação web e de inteligência artificial que facilita o cultivo saudável de hortas e plantações ao fornecer monitoramento de solo em tempo real e recomendações automáticas de fertilizantes. Ele combina tecnologias de **Aplicação WEB** e **IA** para oferecer uma solução completa, intuitiva e eficiente para o gerenciamento de hortas, utilizando sensores de solo e inteligência artificial para análise de dados e geração de recomendações.
 
 ---
 
