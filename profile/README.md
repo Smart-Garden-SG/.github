@@ -2,20 +2,27 @@
 
 ## 📚 Sumário
 
-1. [🌟 Motivação](#motivação)
-2. [🗄️ Modelagem dos Dados](#modelagem-dos-dados)
-3. [🛠️ Arquitetura do Projeto](#arquitetura-do-projeto)
-4. [✅ Requisitos do Projeto](#requisitos-do-projeto)
+1. [📝 Resumo](#resumo)
+2. [🌟 Motivação](#motivação)
+3. [🗄️ Modelagem dos Dados](#modelagem-dos-dados)
+4. [🛠️ Arquitetura do Projeto](#arquitetura-do-projeto)
+5. [✅ Requisitos do Projeto](#requisitos-do-projeto)
     - [🔒 Autenticação e Controle](#autenticação-e-controle)
     - [📊 Monitoramento e Dashboard](#monitoramento-e-dashboard)
     - [💾 Gestão de Dados](#gestão-de-dados)
     - [⚠️ Eventos e Alertas](#eventos-e-alertas)
     - [📋 Cadastro de Dispositivos](#cadastro-de-dispositivos)
     - [⚙️ Requisitos Não Funcionais](#requisitos-não-funcionais)
-5. [🛠️ Ferramentas e Dependências](#ferramentas-e-dependências)
-6. [📈 Metodologia Utilizada](#metodologia-utilizada)
-7. [⚙️ Configurações Necessárias](#configurações-necessárias)
-8. [🚀 Guia para Novos Desenvolvedores](#guia-para-novos-desenvolvedores)
+6. [🛠️ Ferramentas e Dependências](#ferramentas-e-dependências)
+7. [📈 Metodologia Utilizada](#metodologia-utilizada)
+8. [⚙️ Configurações Necessárias](#configurações-necessárias)
+9. [🚀 Guia para Novos Desenvolvedores](#guia-para-novos-desenvolvedores)
+
+---
+
+## 📝 Resumo
+
+O **Smart-Garden** é uma aplicação que facilita o cultivo saudável de hortas e plantações ao fornecer monitoramento de solo em tempo real e recomendações automáticas de fertilizantes. Ele combina tecnologias de **Node.js**, **React** e **FastAPI** para oferecer uma solução completa, intuitiva e eficiente para o gerenciamento de hortas, utilizando sensores de solo e inteligência artificial para análise de dados e geração de recomendações.
 
 ---
 
@@ -107,95 +114,3 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
 - **RNF07**: Os dados devem ser armazenados com redundância para evitar perda de informações.
 
 ---
-
-## 🛠️ Ferramentas e Dependências
-
-### **Back-end**
-- **Node.js** & **Express**
-- **MySQL**
-- **MQTT.js**
-- **Jest** (para testes)
-
-### **Front-end**
-- **React**
-- **G2Plot** (para gráficos)
-
-### **IA**
-- **Python** & **FastAPI**
-- **PyCaret**
-
----
-
-## 📈 Metodologia Utilizada
-
-Utilizamos a metodologia **Kanban** para gerenciar as tarefas do projeto:
-
-- **Colunas do Kanban**:
-  - **Backlog**: Tarefas planejadas.
-  - **Em Progresso**: Tarefas em desenvolvimento.
-  - **Concluído**: Tarefas finalizadas.
-
-Ferramenta utilizada: **Trello**.
-
----
-
-## ⚙️ Configurações Necessárias
-
-### **Back-end**
-```bash
-cd smart-garden-backend-main
-npm install
-npm start
-```
-
-### **Front-end**
-```bash
-cd smart-garden-frontend-main
-npm install
-npm start
-```
-
-### **IA**
-```bash
-cd smart-garden-ai-main
-pip install -r requirements.txt
-python main.py
-```
-
----
-
-## 🚀 Guia para Novos Desenvolvedores
-
-### **Passos para Começar**
-
-1. **Clone o Repositório**:
-   ```bash
-   git clone https://github.com/Smart-Garden-SG/smart-garden-backend
-   git clone https://github.com/Smart-Garden-SG/smart-garden-frontend
-   git clone https://github.com/Smart-Garden-SG/smart-garden-ai
-   ```
-
-2. **Instale as Dependências**:
-   - Back-end: `npm install`
-   - Front-end: `npm install`
-   - IA: `pip install -r requirements.txt`
-
-3. **Configure o Banco de Dados**:
-   - Utilize MySQL para configurar o banco de dados necessário.
-
-4. **Execute os Serviços**:
-   ```bash
-   # Back-end
-   npm start
-   
-   # Front-end
-   npm start
-
-   # IA
-   python main.py
-   ```
-
-5. **Acesse o Front-end** em `http://localhost:3000`.
-6. **Teste a API** em `http://localhost:5000`.
-
-**Contribua** organizando suas tarefas pelo quadro Kanban.
