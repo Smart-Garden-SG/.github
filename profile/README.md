@@ -2,27 +2,26 @@
 
 ## 📚 Sumário
 
-1. [📝 Resumo](#resumo)
-2. [🌟 Motivação](#motivação)
-3. [🗄️ Modelagem dos Dados](#modelagem-dos-dados)
-4. [🛠️ Arquitetura do Projeto](#arquitetura-do-projeto)
-5. [✅ Requisitos do Projeto](#requisitos-do-projeto)
+1. [🌟 Motivação](#motivação)
+2. [🗄️ Modelagem dos Dados](#modelagem-dos-dados)
+3. [🛠️ Arquitetura do Projeto](#arquitetura-do-projeto)
+4. [✅ Requisitos do Projeto](#requisitos-do-projeto)
     - [🔒 Autenticação e Controle](#autenticação-e-controle)
     - [📊 Monitoramento e Dashboard](#monitoramento-e-dashboard)
     - [💾 Gestão de Dados](#gestão-de-dados)
     - [⚠️ Eventos e Alertas](#eventos-e-alertas)
     - [📋 Cadastro de Dispositivos](#cadastro-de-dispositivos)
     - [⚙️ Requisitos Não Funcionais](#requisitos-não-funcionais)
-6. [🛠️ Ferramentas e Dependências](#ferramentas-e-dependências)
-7. [📈 Metodologia Utilizada](#metodologia-utilizada)
-8. [⚙️ Configurações Necessárias](#configurações-necessárias)
-9. [🚀 Guia para Novos Desenvolvedores](#guia-para-novos-desenvolvedores)
+5. [🛠️ Ferramentas e Dependências](#ferramentas-e-dependências)
+6. [📈 Metodologia Utilizada](#metodologia-utilizada)
+7. [⚙️ Configurações Necessárias](#configurações-necessárias)
+8. [🚀 Guia para Novos Desenvolvedores](#guia-para-novos-desenvolvedores)
 
 ---
 
 ## 📝 Resumo
 
-O **Smart-Garden** é uma aplicação web e de inteligência artificial que facilita o cultivo saudável de hortas e plantações ao fornecer monitoramento de solo em tempo real e recomendações automáticas de fertilizantes. Ele combina tecnologias de **Node.js**, **React** e **FastAPI** para oferecer uma solução completa, intuitiva e eficiente para o gerenciamento de hortas, utilizando sensores de solo e inteligência artificial para análise de dados e geração de recomendações.
+O **Smart-Garden** é uma aplicação web e de inteligência artificial que facilita o cultivo saudável de hortas e plantações ao fornecer monitoramento de solo em tempo real e recomendações automáticas de fertilizantes. Ele combina tecnologias de Aplicação WEB e IA para oferecer uma solução completa, intuitiva e eficiente para o gerenciamento de hortas, utilizando sensores de solo e inteligência artificial para análise de dados e geração de recomendações.
 
 ---
 
@@ -48,11 +47,9 @@ O projeto utiliza a seguinte modelagem de banco de dados:
 
 **Tabelas:**
 - **`tb_users`**: Armazena informações dos usuários.
-- **`tb_devices`**: Contém informações dos dispositivos e sua associação com usuários.
+- **`tb_devices`**: Contém informações dos dispositivos.
 - **`tb_measures`**: Armazena as medições dos sensores.
-- **`tb_events`**: Registra eventos e alertas associados aos dispositivos.
-
-Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utilizada no back-end.
+- **`tb_events`**: Registra eventos de recomendação e alertas associados aos valores de solo.
 
 ---
 
@@ -64,7 +61,7 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
    - APIs REST para gerenciar os dados, autenticação e lógica de negócio.
 
 2. **Front-end (React)**:
-   - Interface de usuário com componentes reutilizáveis.
+   - Interface de usuário para vizualição das amostras e eventos Gerados pela IA.
 
 3. **Inteligência Artificial (Python & FastAPI)**:
    - Modelos de IA que processam os dados do solo e fornecem recomendações.
@@ -72,10 +69,11 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
 ![Diagrama da Arquitetura do Projeto](./Application%20-%20Diagram.jpeg)
 
 **Fluxo de Dados**:
-1. Sensores enviam dados via **MQTT**.
-2. O back-end processa e armazena os dados.
-3. A IA faz recomendações com base nesses dados.
-4. O front-end exibe os resultados em dashboards.
+1. Sensores enviam dados via Pub **MQTT**.
+2. O **MQTT** processa os dados 
+3. O back-end processa e armazena os dados.
+4. A IA faz recomendações com base nesses dados.
+5. O front-end exibe os resultados em dashboards.
 
 ---
 
@@ -114,3 +112,95 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
 - **RNF07**: Os dados devem ser armazenados com redundância para evitar perda de informações.
 
 ---
+
+## 🛠️ Ferramentas e Dependências
+
+### **Back-end**
+- **Node.js** & **Express**
+- **MySQL**
+- **MQTT.js**
+- **Jest** (para testes)
+
+### **Front-end**
+- **React**
+- **G2Plot** (para gráficos)
+
+### **IA**
+- **Python** & **FastAPI**
+- **PyCaret**
+
+---
+
+## 📈 Metodologia Utilizada
+
+Utilizamos a metodologia **Kanban** para gerenciar as tarefas do projeto:
+
+- **Colunas do Kanban**:
+  - **Backlog**: Tarefas planejadas.
+  - **Em Progresso**: Tarefas em desenvolvimento.
+  - **Concluído**: Tarefas finalizadas.
+
+Ferramenta utilizada: **Trello**.
+
+---
+
+## ⚙️ Configurações Necessárias
+
+### **Back-end**
+```bash
+cd smart-garden-backend-main
+npm install
+npm start
+```
+
+### **Front-end**
+```bash
+cd smart-garden-frontend-main
+npm install
+npm start
+```
+
+### **IA**
+```bash
+cd smart-garden-ai-main
+pip install -r requirements.txt
+python main.py
+```
+
+---
+
+## 🚀 Guia para Novos Desenvolvedores
+
+### **Passos para Começar**
+
+1. **Clone o Repositório**:
+   ```bash
+   git clone https://github.com/Smart-Garden-SG/smart-garden-backend
+   git clone https://github.com/Smart-Garden-SG/smart-garden-frontend
+   git clone https://github.com/Smart-Garden-SG/smart-garden-ai
+   ```
+
+2. **Instale as Dependências**:
+   - Back-end: `npm install`
+   - Front-end: `npm install`
+   - IA: `pip install -r requirements.txt`
+
+3. **Configure o Banco de Dados**:
+   - Utilize MySQL para configurar o banco de dados necessário.
+
+4. **Execute os Serviços**:
+   ```bash
+   # Back-end
+   npm start
+   
+   # Front-end
+   npm start
+
+   # IA
+   python main.py
+   ```
+
+5. **Acesse o Front-end** em `http://localhost:3000`.
+6. **Teste a API** em `http://localhost:5000`.
+
+**Contribua** organizando suas tarefas pelo quadro Kanban.
