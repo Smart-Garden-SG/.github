@@ -4,7 +4,11 @@
 
 O **Smart-Garden** foi desenvolvido para resolver um desafio comum: a falta de conhecimento técnico para cuidar de hortas e plantações. Muitas pessoas não sabem como identificar e corrigir deficiências no solo, o que leva a cultivos pouco produtivos e desistência precoce da prática.
 
-Com o Smart-Garden, é possível monitorar os parâmetros do solo em tempo real e receber recomendações automáticas de fertilizantes, facilitando o cultivo de hortas saudáveis.
+**Fatos Relevantes:**
+- *"A baixa adoção de práticas de manejo e correção de solo por pequenos produtores é uma das causas de baixa produtividade agrícola."* — **Embrapa: Tecnologias para Agricultura Familiar**
+- *"No Brasil, cerca de 30% das perdas alimentares estão associadas a práticas inadequadas de manejo no cultivo."* — **SESI-SP: Alimentação e Desperdício**
+
+O **Smart-Garden** facilita o cultivo saudável ao fornecer monitoramento de solo em tempo real e recomendações automáticas de fertilizantes.
 
 ---
 
@@ -12,25 +16,25 @@ Com o Smart-Garden, é possível monitorar os parâmetros do solo em tempo real 
 
 ### **Back-end (Node.js & Express)**
 
-- **Controllers**: Responsáveis por manipular as regras de negócio e processar requisições.
+- **Controllers**: Controlam as regras de negócio e processamento das requisições:
   - `authController.js`
   - `dashboardController.js`
   - `devicesController.js`
   - `eventsController.js`
   - `measuresController.js`
 
-- **Models**: Estrutura de dados e conexão com o banco de dados.
+- **Models**: Estrutura de dados e conexão com o banco de dados:
   - `db.js`: Conexão com o banco de dados.
   - `dbTest.js`: Configuração para testes.
 
-- **Routes**: Define os endpoints da API.
+- **Routes**: Define os endpoints da API:
   - `authRoutes.js`
   - `dashboardRoutes.js`
   - `devicesRoutes.js`
   - `eventsRoutes.js`
   - `measuresRoutes.js`
 
-- **Testes**: Testes unitários para os controllers.
+- **Testes**: Arquivos de teste para os controllers:
   - `authController.test.js`
   - `dashboardController.test.js`
   - `devicesController.test.js`
@@ -54,7 +58,7 @@ Com o Smart-Garden, é possível monitorar os parâmetros do solo em tempo real 
 
 ### **IA (Python & FastAPI)**
 
-- **Modelos de Recomendação de Fertilizantes**:
+- **Modelos de Recomendações**:
   - `fertilizer_classification_model_for_alface.pkl`
   - `fertilizer_recommendation_model.pkl`
 
@@ -65,23 +69,22 @@ Com o Smart-Garden, é possível monitorar os parâmetros do solo em tempo real 
 
 ## Arquitetura do Projeto
 
-O **Smart-Garden** utiliza uma arquitetura de três camadas:
+### **Estrutura Geral**
 
 1. **Back-end (Node.js & Express)**:
-   - Gerencia a lógica de negócio, APIs REST e conexão com o banco de dados.
+   - APIs REST para gerenciar os dados, autenticação e lógica de negócio.
 
 2. **Front-end (React)**:
-   - Interface do usuário desenvolvida em React, com componentes reutilizáveis.
+   - Interface de usuário com componentes reutilizáveis.
 
-3. **Inteligência Artificial (FastAPI & Python)**:
-   - Modelos de IA para recomendar fertilizantes com base nos dados dos sensores.
+3. **Inteligência Artificial (Python & FastAPI)**:
+   - Modelos de IA que processam os dados do solo e fornecem recomendações.
 
-**Fluxo de dados:**
-
-1. Os sensores enviam dados via **MQTT**.
-2. O back-end processa e armazena os dados no banco de dados.
-3. A IA analisa os dados e gera recomendações.
-4. O front-end exibe os dados e as recomendações em tempo real.
+**Fluxo de Dados**:
+1. Sensores enviam dados via **MQTT**.
+2. O back-end processa e armazena os dados.
+3. A IA faz recomendações com base nesses dados.
+4. O front-end exibe os resultados em dashboards.
 
 ---
 
@@ -114,42 +117,39 @@ O **Smart-Garden** utiliza uma arquitetura de três camadas:
 ## Ferramentas e Dependências
 
 ### **Back-end**
-- **Node.js & Express**
-- **MQTT.js**: Para comunicação MQTT
-- **MySQL**: Banco de dados
-- **Jest**: Testes unitários
+- **Node.js** & **Express**
+- **MySQL**
+- **MQTT.js**
+- **Jest** (para testes)
 
 ### **Front-end**
 - **React**
-- **G2Plot**: Para visualização de dados
+- **G2Plot** (para gráficos)
 
 ### **IA**
-- **Python & FastAPI**
-- **Scikit-Learn**: Modelos de machine learning
-- **Pickle**: Para serialização dos modelos
+- **Python** & **FastAPI**
+- **Scikit-Learn**
+- **Pickle** (para modelos)
 
 ---
 
 ## Configurações Necessárias
 
-### **Instalação do Back-end**
-
+### **Back-end**
 ```bash
 cd smart-garden-backend-main
 npm install
 npm start
 ```
 
-### **Instalação do Front-end**
-
+### **Front-end**
 ```bash
 cd smart-garden-frontend-main
 npm install
 npm start
 ```
 
-### **Execução da IA**
-
+### **IA**
 ```bash
 cd smart-garden-ai-main
 pip install -r requirements.txt
@@ -160,13 +160,14 @@ python main.py
 
 ## Metodologia Utilizada
 
-Foi aplicada a metodologia **Kanban** para organizar as tarefas do projeto. Utilizamos ferramentas como **Trello** para gerenciar o fluxo de trabalho, com colunas:
+Utilizamos a metodologia **Kanban** para gerenciar as tarefas do projeto:
 
-- **Backlog**: Tarefas planejadas.
-- **Em Progresso**: Tarefas em desenvolvimento.
-- **Concluído**: Tarefas finalizadas.
+- **Colunas do Kanban**:
+  - **Backlog**: Tarefas planejadas.
+  - **Em Progresso**: Tarefas em desenvolvimento.
+  - **Concluído**: Tarefas finalizadas.
 
-Essa abordagem proporcionou visibilidade, flexibilidade e melhor colaboração entre os membros da equipe.
+Ferramenta utilizada: **Trello**.
 
 ---
 
@@ -174,31 +175,32 @@ Essa abordagem proporcionou visibilidade, flexibilidade e melhor colaboração e
 
 ### **Passos para Começar**
 
-1. **Clone o Repositório**
+1. **Clone o Repositório**:
    ```bash
    git clone <url-do-repositorio>
    ```
 
-2. **Instale as Dependências**
+2. **Instale as Dependências**:
    - Back-end: `npm install`
    - Front-end: `npm install`
    - IA: `pip install -r requirements.txt`
 
-3. **Configure o Banco de Dados**
-   - Utilize o MySQL para criar o banco de dados necessário.
+3. **Configure o Banco de Dados**:
+   - Utilize MySQL para configurar o banco de dados necessário.
 
-4. **Execute os Serviços**
-   - **Back-end**: `npm start`
-   - **Front-end**: `npm start`
-   - **IA**: `python main.py`
+4. **Execute os Serviços**:
+   ```bash
+   # Back-end
+   npm start
+   
+   # Front-end
+   npm start
 
-5. **Teste a Aplicação**
-   - Acesse o front-end em `http://localhost:3000`
-   - Verifique a API em `http://localhost:5000`
+   # IA
+   python main.py
+   ```
 
-6. **Contribua**
-   - Utilize o quadro Kanban para organizar suas tarefas.
+5. **Acesse o Front-end** em `http://localhost:3000`.
+6. **Teste a API** em `http://localhost:5000`.
 
----
-
-**Desenvolvido por:** Equipe Smart-Garden
+**Contribua** organizando suas tarefas pelo quadro Kanban.
