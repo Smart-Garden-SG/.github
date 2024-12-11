@@ -149,7 +149,9 @@ python main.py
 
 1. **Clone o Repositório**:
    ```bash
-   git clone <url-do-repositorio>
+   git clone https://github.com/Smart-Garden-SG/smart-garden-backend
+   git clone https://github.com/Smart-Garden-SG/smart-garden-frontend
+   git clone https://github.com/Smart-Garden-SG/smart-garden-ai
    ```
 
 2. **Instale as Dependências**:
