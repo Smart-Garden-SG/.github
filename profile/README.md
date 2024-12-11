@@ -80,29 +80,35 @@ O projeto utiliza a seguinte modelagem de banco de dados:
 
 ---
 
-## ✅ Requisitos do Projeto
+## ✅ **Requisitos do Projeto**
 
 ### 🔒 **Autenticação e Controle**
-- **RF01**: Autenticação de Usuário
-- **RF02**: Controle de Acesso
+
+- **RF01**: O sistema deverá ter uma página de **login** para autenticação de usuários.
+- **RF02**: O sistema deverá implementar **controle de acesso** para garantir que apenas usuários autenticados possam acessar funcionalidades específicas.
 
 ### 📊 **Monitoramento e Dashboard**
-- **RF03**: Dashboard de Monitoramento
-- **RF06**: Leitura Modbus
-- **RF07**: Transmissão via MQTT
+
+- **RF03**: O sistema deverá apresentar um **dashboard de monitoramento** para exibir os dados coletados pelos sensores em tempo real.
+- **RF06**: O sistema deverá ser capaz de realizar a **leitura de dados Modbus** a partir dos sensores conectados.
+- **RF07**: O sistema deverá realizar a **transmissão dos dados via MQTT** para o back-end.
 
 ### 💾 **Gestão de Dados**
-- **RF08**: Escuta Contínua de Tópicos MQTT
-- **RF09**: Armazenamento de Dados
-- **RF10**: APIs REST
+
+- **RF08**: O sistema deverá ter uma funcionalidade para **escutar continuamente os tópicos MQTT** e armazenar os dados recebidos.
+- **RF09**: O sistema deverá ser capaz de **armazenar os dados** coletados na tabela `tb_measures` do banco de dados **MySQL**.
+- **RF10**: O sistema deverá fornecer **APIs REST** para consulta e manipulação dos dados armazenados.
 
 ### ⚠️ **Eventos e Alertas**
-- **RF04**: Gestão de Eventos
-- **RF12**: Recomendação de Fertilizantes por IA
-- **RF11**: Visualização Interativa
+
+- **RF04**: O sistema deverá permitir a **gestão de eventos**, armazenando registros de eventos gerados pelos sensores e pela IA.
+- **RF12**: O sistema deverá fornecer **recomendações de fertilizantes** com base nos dados analisados pela IA.
+- **RF11**: O sistema deverá permitir a **visualização interativa dos eventos e alertas** na interface do usuário.
 
 ### 📋 **Cadastro de Dispositivos**
-- **RF05**: Cadastro de Dispositivos
+
+- **RF05**: O sistema deverá ter uma funcionalidade para **cadastro e configuração de dispositivos**, permitindo a associação dos dispositivos com os usuários.
+
 
 ### ⚙️ **Requisitos Não Funcionais**
 
