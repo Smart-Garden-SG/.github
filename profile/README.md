@@ -14,62 +14,12 @@ O **Smart-Garden** facilita o cultivo saudável ao fornecer monitoramento de sol
 
 ## Modelagem dos Dados
 
-### **Back-end (Node.js & Express)**
-
-- **Controllers**: Controlam as regras de negócio e processamento das requisições:
-  - `authController.js`
-  - `dashboardController.js`
-  - `devicesController.js`
-  - `eventsController.js`
-  - `measuresController.js`
-
-- **Models**: Estrutura de dados e conexão com o banco de dados:
-  - `db.js`: Conexão com o banco de dados.
-  - `dbTest.js`: Configuração para testes.
-
-- **Routes**: Define os endpoints da API:
-  - `authRoutes.js`
-  - `dashboardRoutes.js`
-  - `devicesRoutes.js`
-  - `eventsRoutes.js`
-  - `measuresRoutes.js`
-
-- **Testes**: Arquivos de teste para os controllers:
-  - `authController.test.js`
-  - `dashboardController.test.js`
-  - `devicesController.test.js`
-  - `events.test.js`
-  - `measures.test.js`
-
-### **Front-end (React)**
-
-- **Componentes**:
-  - `Dashboard`
-  - `DeviceRegistration`
-  - `Events`
-  - `LoginScreen`
-  - `SideBar`
-  - `TopBar`
-
-- **Estilização**:
-  - `App.css`
-  - `index.css`
-  - `styles.css`
-
-### **IA (Python & FastAPI)**
-
-- **Modelos de Recomendações**:
-  - `fertilizer_classification_model_for_alface.pkl`
-  - `fertilizer_recommendation_model.pkl`
-
-- **API Principal**:
-  - `main.py`
 
 ### **Diagrama de Banco de Dados**
 
 O projeto utiliza a seguinte modelagem de banco de dados:
 
-![Diagrama de Banco de Dados](path/to/Database-Diagram.png)
+![Diagrama de Banco de Dados](./Database-Diagram.png)
 
 **Tabelas:**
 - **`tb_users`**: Armazena informações dos usuários.
@@ -126,6 +76,16 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
 ### **Cadastro de Dispositivos**
 - **RF05**: Cadastro de Dispositivos
 
+### **Requisitos Não Funcionais**
+
+- **RNF01**: O sistema deve ser capaz de processar dados em tempo real com latência mínima.
+- **RNF02**: A aplicação deve garantir a segurança dos dados, utilizando criptografia para senhas e informações sensíveis.
+- **RNF03**: O sistema deve suportar múltiplos usuários simultaneamente sem perda de desempenho.
+- **RNF04**: A interface deve ser intuitiva e de fácil navegação.
+- **RNF05**: A aplicação deve ser compatível com os principais navegadores (Chrome, Firefox, Edge).
+- **RNF06**: O sistema deve ter alta disponibilidade, com tempo de inatividade mínimo.
+- **RNF07**: Os dados devem ser armazenados com redundância para evitar perda de informações.
+
 ---
 
 ## Ferramentas e Dependências
@@ -142,9 +102,8 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
 
 ### **IA**
 - **Python** & **FastAPI**
-- **Scikit-Learn**
-- **Pickle** (para modelos)
-
+- **Pycaret**
+  
 ---
 
 ## Configurações Necessárias
