@@ -201,6 +201,3 @@ python main.py
    ```
 
 5. **Acesse o Front-end** em `http://localhost:3000`.
-6. **Teste a API** em `http://localhost:5000`.
-
-**Contribua** organizando suas tarefas pelo quadro Kanban.
