@@ -1,6 +1,25 @@
-# Smart-Garden
+# 🌱 Smart-Garden
 
-## Motivação
+## 📚 Sumário
+
+1. [🌟 Motivação](#motivação)
+2. [🗄️ Modelagem dos Dados](#modelagem-dos-dados)
+3. [🛠️ Arquitetura do Projeto](#arquitetura-do-projeto)
+4. [✅ Requisitos do Projeto](#requisitos-do-projeto)
+    - [🔒 Autenticação e Controle](#autenticação-e-controle)
+    - [📊 Monitoramento e Dashboard](#monitoramento-e-dashboard)
+    - [💾 Gestão de Dados](#gestão-de-dados)
+    - [⚠️ Eventos e Alertas](#eventos-e-alertas)
+    - [📋 Cadastro de Dispositivos](#cadastro-de-dispositivos)
+    - [⚙️ Requisitos Não Funcionais](#requisitos-não-funcionais)
+5. [🛠️ Ferramentas e Dependências](#ferramentas-e-dependências)
+6. [📈 Metodologia Utilizada](#metodologia-utilizada)
+7. [⚙️ Configurações Necessárias](#configurações-necessárias)
+8. [🚀 Guia para Novos Desenvolvedores](#guia-para-novos-desenvolvedores)
+
+---
+
+## 🌟 Motivação
 
 O **Smart-Garden** foi desenvolvido para resolver um desafio comum: a falta de conhecimento técnico para cuidar de hortas e plantações. Muitas pessoas não sabem como identificar e corrigir deficiências no solo, o que leva a cultivos pouco produtivos e desistência precoce da prática.
 
@@ -12,10 +31,9 @@ O **Smart-Garden** facilita o cultivo saudável ao fornecer monitoramento de sol
 
 ---
 
-## Modelagem dos Dados
+## 🗄️ Modelagem dos Dados
 
-
-### **Diagrama de Banco de Dados**
+### **📊 Diagrama de Banco de Dados**
 
 O projeto utiliza a seguinte modelagem de banco de dados:
 
@@ -31,9 +49,9 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
 
 ---
 
-## Arquitetura do Projeto
+## 🛠️ Arquitetura do Projeto
 
-### **Estrutura Geral**
+### **🧩 Estrutura Geral**
 
 1. **Back-end (Node.js & Express)**:
    - APIs REST para gerenciar os dados, autenticação e lógica de negócio.
@@ -43,7 +61,7 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
 
 3. **Inteligência Artificial (Python & FastAPI)**:
    - Modelos de IA que processam os dados do solo e fornecem recomendações.
-  
+
 ![Diagrama da Arquitetura do Projeto](./Application%20-%20Diagram.jpeg)
 
 **Fluxo de Dados**:
@@ -54,31 +72,31 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
 
 ---
 
-## Requisitos do Projeto
+## ✅ Requisitos do Projeto
 
-### **Autenticação e Controle**
+### 🔒 **Autenticação e Controle**
 - **RF01**: Autenticação de Usuário
 - **RF02**: Controle de Acesso
 
-### **Monitoramento e Dashboard**
+### 📊 **Monitoramento e Dashboard**
 - **RF03**: Dashboard de Monitoramento
 - **RF06**: Leitura Modbus
 - **RF07**: Transmissão via MQTT
 
-### **Gestão de Dados**
+### 💾 **Gestão de Dados**
 - **RF08**: Escuta Contínua de Tópicos MQTT
 - **RF09**: Armazenamento de Dados
 - **RF10**: APIs REST
 
-### **Eventos e Alertas**
+### ⚠️ **Eventos e Alertas**
 - **RF04**: Gestão de Eventos
 - **RF12**: Recomendação de Fertilizantes por IA
 - **RF11**: Visualização Interativa
 
-### **Cadastro de Dispositivos**
+### 📋 **Cadastro de Dispositivos**
 - **RF05**: Cadastro de Dispositivos
 
-### **Requisitos Não Funcionais**
+### ⚙️ **Requisitos Não Funcionais**
 
 - **RNF01**: O sistema deve ser capaz de processar dados em tempo real com latência mínima.
 - **RNF02**: A aplicação deve garantir a segurança dos dados, utilizando criptografia para senhas e informações sensíveis.
@@ -90,7 +108,7 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
 
 ---
 
-## Ferramentas e Dependências
+## 🛠️ Ferramentas e Dependências
 
 ### **Back-end**
 - **Node.js** & **Express**
@@ -104,11 +122,11 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
 
 ### **IA**
 - **Python** & **FastAPI**
-- **Pycaret**
-  
+- **PyCaret**
+
 ---
 
-## Metodologia Utilizada
+## 📈 Metodologia Utilizada
 
 Utilizamos a metodologia **Kanban** para gerenciar as tarefas do projeto:
 
@@ -121,7 +139,7 @@ Ferramenta utilizada: **Trello**.
 
 ---
 
-## Configurações Necessárias
+## ⚙️ Configurações Necessárias
 
 ### **Back-end**
 ```bash
@@ -143,9 +161,10 @@ cd smart-garden-ai-main
 pip install -r requirements.txt
 python main.py
 ```
+
 ---
 
-## Guia para Novos Desenvolvedores
+## 🚀 Guia para Novos Desenvolvedores
 
 ### **Passos para Começar**
 
