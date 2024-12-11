@@ -122,97 +122,6 @@ O projeto utiliza a seguinte modelagem de banco de dados:
 
 ---
 
-## 🛠️ Ferramentas e Dependências
-
-### **Back-end**
-- **Node.js** & **Express**
-- **MySQL**
-- **MQTT.js**
-- **Jest** (para testes)
-
-### **Front-end**
-- **React**
-- **G2Plot** (para gráficos)
-
-### **IA**
-- **Python** & **FastAPI**
-- **PyCaret**
-
----
-
-## 📈 Metodologia Utilizada
-
-Utilizamos a metodologia **Kanban** para gerenciar as tarefas do projeto:
-
-- **Colunas do Kanban**:
-  - **Backlog**: Tarefas planejadas.
-  - **Em Progresso**: Tarefas em desenvolvimento.
-  - **Concluído**: Tarefas finalizadas.
-
-Ferramenta utilizada: **Trello**.
-
----
-
-## ⚙️ Configurações Necessárias
-
-### **Back-end**
-```bash
-cd smart-garden-backend-main
-npm install
-npm start
-```
-
-### **Front-end**
-```bash
-cd smart-garden-frontend-main
-npm install
-npm start
-```
-
-### **IA**
-```bash
-cd smart-garden-ai-main
-pip install -r requirements.txt
-python main.py
-```
-
----
-
-## 🚀 Guia para Novos Desenvolvedores
-
-### **Passos para Começar**
-
-1. **Clone o Repositório**:
-   ```bash
-   git clone https://github.com/Smart-Garden-SG/smart-garden-backend
-   git clone https://github.com/Smart-Garden-SG/smart-garden-frontend
-   git clone https://github.com/Smart-Garden-SG/smart-garden-ai
-   ```
-
-2. **Instale as Dependências**:
-   - Back-end: `npm install`
-   - Front-end: `npm install`
-   - IA: `pip install -r requirements.txt`
-
-3. **Configure o Banco de Dados**:
-   - Utilize MySQL para configurar o banco de dados necessário.
-
-4. **Execute os Serviços**:
-   ```bash
-   # Back-end
-   npm start
-   
-   # Front-end
-   npm start
-
-   # IA
-   python main.py
-   ```
-
-5. **Acesse o Front-end** em `http://localhost:3000`.
-
----
-
 ## 🤖 Inteligência Artificial no Smart-Garden
 
 ### 🌾 Como o CatBoost Recomenda Fertilizantes
@@ -303,5 +212,96 @@ Umidade Relativa: 58.37 %
 2. **Processamento**: O **CatBoost** analisa os dados e identifica deficiências no solo.  
 3. **Recomendação**: O fertilizante adequado é sugerido com base nas deficiências detectadas.  
 4. **Saída**: A recomendação é armazenada em `tb_events` e exibida na interface da aplicação.
+
+---
+
+## 🛠️ Ferramentas e Dependências
+
+### **Back-end**
+- **Node.js** & **Express**
+- **MySQL**
+- **MQTT.js**
+- **Jest** (para testes)
+
+### **Front-end**
+- **React**
+- **G2Plot** (para gráficos)
+
+### **IA**
+- **Python** & **FastAPI**
+- **PyCaret**
+
+---
+
+## 📈 Metodologia Utilizada
+
+Utilizamos a metodologia **Kanban** para gerenciar as tarefas do projeto:
+
+- **Colunas do Kanban**:
+  - **Backlog**: Tarefas planejadas.
+  - **Em Progresso**: Tarefas em desenvolvimento.
+  - **Concluído**: Tarefas finalizadas.
+
+Ferramenta utilizada: **Trello**.
+
+---
+
+## ⚙️ Configurações Necessárias
+
+### **Back-end**
+```bash
+cd smart-garden-backend-main
+npm install
+npm start
+```
+
+### **Front-end**
+```bash
+cd smart-garden-frontend-main
+npm install
+npm start
+```
+
+### **IA**
+```bash
+cd smart-garden-ai-main
+pip install -r requirements.txt
+python main.py
+```
+
+---
+
+## 🚀 Guia para Novos Desenvolvedores
+
+### **Passos para Começar**
+
+1. **Clone o Repositório**:
+   ```bash
+   git clone https://github.com/Smart-Garden-SG/smart-garden-backend
+   git clone https://github.com/Smart-Garden-SG/smart-garden-frontend
+   git clone https://github.com/Smart-Garden-SG/smart-garden-ai
+   ```
+
+2. **Instale as Dependências**:
+   - Back-end: `npm install`
+   - Front-end: `npm install`
+   - IA: `pip install -r requirements.txt`
+
+3. **Configure o Banco de Dados**:
+   - Utilize MySQL para configurar o banco de dados necessário.
+
+4. **Execute os Serviços**:
+   ```bash
+   # Back-end
+   npm start
+   
+   # Front-end
+   npm start
+
+   # IA
+   python main.py
+   ```
+
+5. **Acesse o Front-end** em `http://localhost:3000`.
 
 ---
