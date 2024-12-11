@@ -19,7 +19,7 @@ O **Smart-Garden** facilita o cultivo saudável ao fornecer monitoramento de sol
 
 O projeto utiliza a seguinte modelagem de banco de dados:
 
-![Diagrama de Banco de Dados](../Database%20-%20Diagram.png)
+![Diagrama de Banco de Dados](./Database%20-%20Diagram.png)
 
 **Tabelas:**
 - **`tb_users`**: Armazena informações dos usuários.
