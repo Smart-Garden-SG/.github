@@ -70,7 +70,7 @@ O projeto utiliza a seguinte modelagem de banco de dados:
 
 **Fluxo de Dados**:
 1. Sensores enviam dados via Pub **MQTT**.
-2. O **MQTT** processa os dados 
+2. O back-end processa e armazena os dados.
 3. O back-end processa e armazena os dados.
 4. A IA faz recomendações com base nesses dados.
 5. O front-end exibe os resultados em dashboards.
