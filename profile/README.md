@@ -68,14 +68,15 @@ O projeto utiliza a seguinte modelagem de banco de dados:
 
 ![Diagrama da Arquitetura do Projeto](./Application%20-%20Diagram.jpeg)
 
-**Fluxo de Dados**:
-1. Sensores de solo coletam dados dos parâmetros ambientais.
-2. Sensores enviam os dados via Pub MQTT para o back-end.
-3. O back-end processa e armazena os dados na tabela tb_measures do banco de dados MySQL.
-4. O front-end solicita recomendações de fertilizantes à API de IA desenvolvida com FastAPI.
-5. A IA faz predições com o modelo CatBoost utilizando os dados do solo e climáticos.
-6. O back-end armazena a recomendação na tabela tb_events.
-7. O front-end exibe os dados e as recomendações em dashboards e na tela de eventos.
+## **Fluxo de Dados**
+
+1. **Sensores de solo** coletam dados dos parâmetros ambientais.  
+2. **Sensores enviam** os dados via Pub **MQTT** para o back-end.  
+3. O **back-end processa e armazena** os dados na tabela `tb_measures` do banco de dados **MySQL**.  
+4. O **front-end solicita recomendações** de fertilizantes à API de IA desenvolvida com **FastAPI**.  
+5. A **IA faz predições** com o modelo **CatBoost** utilizando os dados do solo e climáticos.  
+6. O **back-end armazena** a recomendação na tabela `tb_events`.  
+7. O **front-end exibe** os dados e as recomendações em dashboards e na tela de eventos.  
 
 ---
 
