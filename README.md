@@ -65,6 +65,20 @@ O **Smart-Garden** facilita o cultivo saudável ao fornecer monitoramento de sol
 - **API Principal**:
   - `main.py`
 
+### **Diagrama de Banco de Dados**
+
+O projeto utiliza a seguinte modelagem de banco de dados:
+
+![Diagrama de Banco de Dados](path/to/Database-Diagram.png)
+
+**Tabelas:**
+- **`tb_users`**: Armazena informações dos usuários.
+- **`tb_devices`**: Contém informações dos dispositivos e sua associação com usuários.
+- **`tb_measures`**: Armazena as medições dos sensores.
+- **`tb_events`**: Registra eventos e alertas associados aos dispositivos.
+
+Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utilizada no back-end.
+
 ---
 
 ## Arquitetura do Projeto
