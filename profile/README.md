@@ -106,6 +106,19 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
   
 ---
 
+## Metodologia Utilizada
+
+Utilizamos a metodologia **Kanban** para gerenciar as tarefas do projeto:
+
+- **Colunas do Kanban**:
+  - **Backlog**: Tarefas planejadas.
+  - **Em Progresso**: Tarefas em desenvolvimento.
+  - **Concluído**: Tarefas finalizadas.
+
+Ferramenta utilizada: **Trello**.
+
+---
+
 ## Configurações Necessárias
 
 ### **Back-end**
@@ -128,20 +141,6 @@ cd smart-garden-ai-main
 pip install -r requirements.txt
 python main.py
 ```
-
----
-
-## Metodologia Utilizada
-
-Utilizamos a metodologia **Kanban** para gerenciar as tarefas do projeto:
-
-- **Colunas do Kanban**:
-  - **Backlog**: Tarefas planejadas.
-  - **Em Progresso**: Tarefas em desenvolvimento.
-  - **Concluído**: Tarefas finalizadas.
-
-Ferramenta utilizada: **Trello**.
-
 ---
 
 ## Guia para Novos Desenvolvedores
