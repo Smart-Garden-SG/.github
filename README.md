@@ -77,6 +77,16 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
 ### **Cadastro de Dispositivos**
 - **RF05**: Cadastro de Dispositivos
 
+### **Requisitos Não Funcionais**
+
+- **RNF01**: O sistema deve ser capaz de processar dados em tempo real com latência mínima.
+- **RNF02**: A aplicação deve garantir a segurança dos dados, utilizando criptografia para senhas e informações sensíveis.
+- **RNF03**: O sistema deve suportar múltiplos usuários simultaneamente sem perda de desempenho.
+- **RNF04**: A interface deve ser intuitiva e de fácil navegação.
+- **RNF05**: A aplicação deve ser compatível com os principais navegadores (Chrome, Firefox, Edge).
+- **RNF06**: O sistema deve ter alta disponibilidade, com tempo de inatividade mínimo.
+- **RNF07**: Os dados devem ser armazenados com redundância para evitar perda de informações.
+
 ---
 
 ## Ferramentas e Dependências
