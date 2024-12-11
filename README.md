@@ -14,56 +14,7 @@ O **Smart-Garden** facilita o cultivo saudável ao fornecer monitoramento de sol
 
 ## Modelagem dos Dados
 
-### **Back-end (Node.js & Express)**
 
-- **Controllers**: Controlam as regras de negócio e processamento das requisições:
-  - `authController.js`
-  - `dashboardController.js`
-  - `devicesController.js`
-  - `eventsController.js`
-  - `measuresController.js`
-
-- **Models**: Estrutura de dados e conexão com o banco de dados:
-  - `db.js`: Conexão com o banco de dados.
-  - `dbTest.js`: Configuração para testes.
-
-- **Routes**: Define os endpoints da API:
-  - `authRoutes.js`
-  - `dashboardRoutes.js`
-  - `devicesRoutes.js`
-  - `eventsRoutes.js`
-  - `measuresRoutes.js`
-
-- **Testes**: Arquivos de teste para os controllers:
-  - `authController.test.js`
-  - `dashboardController.test.js`
-  - `devicesController.test.js`
-  - `events.test.js`
-  - `measures.test.js`
-
-### **Front-end (React)**
-
-- **Componentes**:
-  - `Dashboard`
-  - `DeviceRegistration`
-  - `Events`
-  - `LoginScreen`
-  - `SideBar`
-  - `TopBar`
-
-- **Estilização**:
-  - `App.css`
-  - `index.css`
-  - `styles.css`
-
-### **IA (Python & FastAPI)**
-
-- **Modelos de Recomendações**:
-  - `fertilizer_classification_model_for_alface.pkl`
-  - `fertilizer_recommendation_model.pkl`
-
-- **API Principal**:
-  - `main.py`
 
 ### **Diagrama de Banco de Dados**
 
