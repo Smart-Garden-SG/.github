@@ -44,7 +44,7 @@ Essa modelagem atende aos requisitos do projeto e suporta a estrutura MVC utiliz
 3. **Inteligência Artificial (Python & FastAPI)**:
    - Modelos de IA que processam os dados do solo e fornecem recomendações.
   
-![Diagrama da Arquitetura do Projeto](./Application%20-%20Diagram.png)
+![Diagrama da Arquitetura do Projeto](./Application%20-%20Diagram.jpeg)
 
 **Fluxo de Dados**:
 1. Sensores enviam dados via **MQTT**.
