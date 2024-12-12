@@ -2,20 +2,22 @@
 
 ## 📚 Sumário
 
-1. [🌟 Motivação](#motivação)
-2. [🗄️ Modelagem dos Dados](#modelagem-dos-dados)
-3. [🛠️ Arquitetura do Projeto](#arquitetura-do-projeto)
-4. [✅ Requisitos do Projeto](#requisitos-do-projeto)
-    - [🔒 Autenticação e Controle](#autenticação-e-controle)
-    - [📊 Monitoramento e Dashboard](#monitoramento-e-dashboard)
-    - [💾 Gestão de Dados](#gestão-de-dados)
-    - [⚠️ Eventos e Alertas](#eventos-e-alertas)
-    - [📋 Cadastro de Dispositivos](#cadastro-de-dispositivos)
-    - [⚙️ Requisitos Não Funcionais](#requisitos-não-funcionais)
-5. [🛠️ Ferramentas e Dependências](#ferramentas-e-dependências)
-6. [📈 Metodologia Utilizada](#metodologia-utilizada)
-7. [⚙️ Configurações Necessárias](#configurações-necessárias)
-8. [🚀 Guia para Novos Desenvolvedores](#guia-para-novos-desenvolvedores)
+1. [🌟 Motivação](#-motivação)
+2. [🗄️ Modelagem dos Dados](#-modelagem-dos-dados)
+3. [🛠️ Arquitetura do Projeto](#-arquitetura-do-projeto)
+4. [✅ Requisitos do Projeto](#-requisitos-do-projeto)
+    - [🔒 Autenticação e Controle](#-autenticação-e-controle)
+    - [📊 Monitoramento e Dashboard](#-monitoramento-e-dashboard)
+    - [💾 Gestão de Dados](#-gestão-de-dados)
+    - [⚠️ Eventos e Alertas](#-eventos-e-alertas)
+    - [📋 Cadastro de Dispositivos](#-cadastro-de-dispositivos)
+    - [⚙️ Requisitos Não Funcionais](#-requisitos-não-funcionais)
+5. [🤖 Inteligência Artificial no Smart-Garden](#-inteligência-artificial-no-smart-garden)
+6. [🛠️ Ferramentas e Dependências](#-ferramentas-e-dependências)
+7. [📈 Metodologia Utilizada](#-metodologia-utilizada)
+8. [⚙️ Configurações Necessárias](#-configurações-necessárias)
+9. [🚀 Guia para Novos Desenvolvedores](#-guia-para-novos-desenvolvedores)
+
 
 ---
 
